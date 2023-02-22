@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <Routes>
-      <Route path='/' element={<HomePage />}/>
+      <Route path='/' element={<HomePage allArticles={allArticles}/>}/>
       <Route path='/details/:id' element={<ArticleDetailsPage />}/>
       {/* Bad Path route? */}
     </Routes>

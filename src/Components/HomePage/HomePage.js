@@ -3,12 +3,12 @@ import '../HomePage/HomePage.css'
 import Header from '../Header/Header'
 import ListDisplay from '../ListDisplay/ListDisplay'
 
-const HomePage = () => {
+const HomePage = ({allArticles}) => {
   return (
     <main className='home-page'>
       <Header />
       <h2>Articles:</h2>
-      <ListDisplay />
+      <ListDisplay allArticles={allArticles}/>
     </main>
   )
 }
