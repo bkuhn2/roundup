@@ -4,7 +4,7 @@ export const getArticles = (section) => {
       if (res.ok) {
         return res.json();
       } else {
-        throw new Error('Error getting articles.')
+        throw new Error(`${res.status} Error getting articles!`)
       }
     })
 }

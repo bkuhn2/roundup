@@ -4,13 +4,12 @@ import Header from '../Header/Header'
 import ListDisplay from '../ListDisplay/ListDisplay'
 import FilterForm from '../FilterForm/FilterForm'
 
-const HomePage = ({allArticles}) => {
+const HomePage = ({allArticles, error}) => {
 
   const [filteredArticles, setFilteredArticles] = useState([]);
 
   const filter = useCallback((category) => {
     if (category) {
-      console.log('allArt: ', allArticles);
       setFilteredArticles(allArticles.filter(art => art.section === category));
     } else {
       setFilteredArticles();
@@ -20,10 +19,14 @@ const HomePage = ({allArticles}) => {
   return (
     <main className='home-page'>
       <Header />
-      <FilterForm filter={filter}/>
-      <h2>Articles:</h2>
-      {!filteredArticles && <ListDisplay articles={allArticles}/>}
-      {filteredArticles && <ListDisplay articles={filteredArticles}/>}
+      {error && <h2>{error}</h2>}
+      {(!error && !allArticles.length) && <h2>Loading...</h2>}
+      {(!error && allArticles.length) && <>
+        <FilterForm filter={filter}/>
+        <h2>- Curated Articles -</h2>
+        {!filteredArticles && <ListDisplay articles={allArticles}/>}
+        {filteredArticles && <ListDisplay articles={filteredArticles}/>}
+      </>}
     </main>
   )
 }

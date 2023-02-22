@@ -7,7 +7,7 @@ import Header from '../Header/Header'
 const ArticleDetailsPage = ({allArticles}) => {
 
   const specificID = useParams().id;
-  const [specificArticle, setSpecificArticle] = useState({});
+  const [specificArticle, setSpecificArticle] = useState();
 
   useEffect(() => {
     if (specificID && allArticles.length) {

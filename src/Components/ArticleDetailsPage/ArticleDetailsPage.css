@@ -12,17 +12,13 @@
   width: 80vw;
   height: 100%;
   margin-top: 2em;
-  overflow-x: auto;
   padding: 2em;
-  background-color: rgba(43, 43, 43, 0.477);
+  background-color: rgba(26, 27, 27, 0.477);
   border-radius: 12px;
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-bottom: 2em;
 }
-
-/* @media screen and (min-width: 1200px){
-  .article-detail-section {
-    flex-direction: row;
-  }
-} */
 
 .text-area {
 display: flex;
