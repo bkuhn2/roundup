@@ -2,16 +2,16 @@ import React from 'react'
 import '../ListDisplay/ListDisplay.css'
 import ListItem from '../ListItem/ListItem'
 
-const ListDisplay = ({allArticles}) => {
+const ListDisplay = ({articles}) => {
 
-  const articles = allArticles ? allArticles.map((art, index) => {
+  const displayArticles = articles ? articles.map((art, index) => {
     return <ListItem title={art.title} abstract ={art.abstract} id={art.id} key={index}/>
   })
   : ''
 
   return (
     <section className='list-display'>
-      {articles}
+      {displayArticles}
     </section>
   )
 }

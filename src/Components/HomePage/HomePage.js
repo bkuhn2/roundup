@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import '../HomePage/HomePage.css'
 import Header from '../Header/Header'
 import ListDisplay from '../ListDisplay/ListDisplay'
+import FilterForm from '../FilterForm/FilterForm'
 
 const HomePage = ({allArticles}) => {
+
+  const [filteredArticles, setFilteredArticles] = useState([]);
+
+  const filter = useCallback((category) => {
+    if (category) {
+      console.log('allArt: ', allArticles);
+      setFilteredArticles(allArticles.filter(art => art.section === category));
+    } else {
+      setFilteredArticles();
+    }
+  }, [allArticles, setFilteredArticles]);
+
   return (
     <main className='home-page'>
       <Header />
+      <FilterForm filter={filter}/>
       <h2>Articles:</h2>
-      <ListDisplay allArticles={allArticles}/>
+      {!filteredArticles && <ListDisplay articles={allArticles}/>}
+      {filteredArticles && <ListDisplay articles={filteredArticles}/>}
     </main>
   )
 }
