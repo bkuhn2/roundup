@@ -35,10 +35,9 @@ const App = () => {
       });
   }, []);
 
-  //need 'Loading'...
   return (
     <Routes>
-      <Route path='/' element={<HomePage allArticles={allArticles}/>}/>
+      <Route path='/' element={<HomePage allArticles={allArticles} error={error}/>}/>
       <Route path='/details/:id' element={<ArticleDetailsPage allArticles={allArticles}/>}/>
       {/* Bad Path route? */}
     </Routes>

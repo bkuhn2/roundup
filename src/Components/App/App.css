@@ -1,5 +1,6 @@
 body {
   font-family: 'Sorts Mill Goudy', serif;
+  background-color: rgba(226, 226, 216, 0.64);
 }
 
 h2 {
@@ -27,5 +28,8 @@ select {
 }
 
 main {
-  background-color: rgba(226, 226, 216, 0.64);
+}
+
+a {
+  text-decoration: none;
 }
