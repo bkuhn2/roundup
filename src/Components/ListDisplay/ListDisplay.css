@@ -1,5 +1,6 @@
 .list-display {
   border-style: solid;
+  border-color: rgba(38, 39, 39, 0.868);
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -8,4 +9,6 @@
   margin-top: 2em;
   overflow-x: auto;
   padding: 1em;
+  border-radius: 14px;
+  background-color: rgba(3, 3, 3, 0.722);
 }

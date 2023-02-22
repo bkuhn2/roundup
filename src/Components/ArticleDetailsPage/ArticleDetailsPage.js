@@ -22,15 +22,15 @@ const ArticleDetailsPage = ({allArticles}) => {
       {specificArticle && 
       <section className='article-detail-section'>
         <div className='text-area'>
-          <h1>{specificArticle.title}</h1>
-          <h2>{specificArticle.abstract}</h2>
+          <h1 className='s-title'>{specificArticle.title}</h1>
+          <h2 className='s-abstract'>{specificArticle.abstract}</h2>
           <p>{specificArticle.byAuthor}</p>
           <p>Originally published {specificArticle.publishedDate}</p>
-          <Link to={specificArticle.url}>Click here to read the article!</Link>
+          <Link to={specificArticle.url} className='s-link'>Click here to read the article!</Link>
         </div>
         <div className='image-area'>
           <img src={specificArticle.img} className='article-img'/>
-          <p>{specificArticle.imgCaption}</p>
+          <p className='s-caption'>{specificArticle.imgCaption}</p>
         </div>
       </section>}
     </main>
