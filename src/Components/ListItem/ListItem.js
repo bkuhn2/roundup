@@ -6,7 +6,7 @@ const ListItem = ({title, abstract, id}) => {
   return (
     <Link to={`/details/${id}`} className='list-item'>
       <h3>{title}</h3>
-      <p>{abstract}</p>
+      {/* <p>{abstract}</p> */}
     </Link>
   )
 }

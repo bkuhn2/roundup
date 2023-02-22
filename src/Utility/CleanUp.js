@@ -1,9 +1,5 @@
 export const formatRawData = (data) => {
 
-  const makeRandomNum = () => {
-    return Math.floor(Math.random() * 10000);
-  };
-
   const titledData = data.results.filter(result => result.title);
 
   return titledData.map((article, index) => {
@@ -11,7 +7,7 @@ export const formatRawData = (data) => {
       title: article.title,
       abstract: article.abstract,
       url: article.url,
-      id: makeRandomNum() * (index + 1),
+      id: article.short_url.split('https://nyti.ms/')[1],
       byAuthor: article.byline,
       publishedDate: article.published_date, //may want to format this differently
       descriptors: article.des_facet.map(des => des.toLowerCase()).join(' '),
