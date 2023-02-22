@@ -10,3 +10,9 @@
   padding-right: 1em;
   text-decoration: none;
 }
+
+@media screen and (max-width: 700px){
+  .list-item {
+    font-size: 1em;
+  }
+}
