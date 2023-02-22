@@ -1,14 +1,21 @@
 form {
   border-style: solid;
+  border-color: rgb(12, 12, 12);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90vw;
   margin-top: 2em;
   overflow-x: auto;
-  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.782);
+  border-radius: 17px;
 }
 
 button {
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.filter-heading {
+  color: white;
 }

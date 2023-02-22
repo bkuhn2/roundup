@@ -11,7 +11,7 @@ const FilterForm = ({filter}) => {
 
   return (
     <form>
-      <h2>Filter By Category</h2>
+      <h2 className='filter-heading'>Filter By Category</h2>
       <select id='categoryInput' value={category} onChange={event => {setCategory(event.target.value)}}>
         <option value=''>Select a category</option>
         <option value='Sports'>Sports</option>

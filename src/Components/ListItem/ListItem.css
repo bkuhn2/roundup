@@ -1,5 +1,18 @@
 .list-item {
   border-style: solid;
-  padding: 1em;
+  border-color: rgba(0, 0, 0, 0.778);
+  background-color: rgba(251, 252, 252, 0.914);
   margin-bottom: 1em;
+  border-radius: 17px;
+  color: black;
+  font-size: 1.6em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px){
+  .list-item {
+    font-size: 1em;
+  }
 }
