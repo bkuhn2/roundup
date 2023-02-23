@@ -1,5 +1,7 @@
 # Round Up
 
+[Deployed Site](https://roundup-takehome.netlify.app/)
+
 ## Abstract
 
 Round Up is a React application that curates a list of 'lifestyle' articles from the New York Times and provides more details about each article, as well as an external link to the article itself. It features a streamlined but user-friendly UI/UX that is responsive across all screen sizes and is designed for a user that wants to peruse the travel, sports and arts sections of the paper specifically. When a user opens the app, they will see a list of articles they can browse, and can filter by category if the want to browse a specific section. When the user clicks on an article in the list, they will see the article details and external link.
