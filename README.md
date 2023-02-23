@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Round Up
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Abstract
 
-## Available Scripts
+Round Up is a React application that curates a list of 'lifestyle' articles from the New York Times and provides more details about each article, as well as an external link to the article itself. It features a streamlined but user-friendly UI/UX that is responsive across all screen sizes and is designed for a user that wants to peruse the travel, sports and arts sections of the paper specifically. When a user opens the app, they will see a list of articles they can browse, and can filter by category if the want to browse a specific section. When the user clicks on an article in the list, they will see the article details and external link.
 
-In the project directory, you can run:
+This app uses the [NYT Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview).
 
-### `npm start`
+## Context
+This app was created as an assignment for the Turing School of Software & Design. It simulates a 'take-home' challenge that an applicant might receive as a part of the interview process in job hunting and was created in an 8 hour sprint.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Preview of App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://user-images.githubusercontent.com/110054994/220986700-4c285e34-f26d-441b-96d9-050fc97b54b3.png" height=400>
 
-### `npm test`
+## Contributors
+[Brett Kuhn](https://github.com/bkuhn2)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
+- React
+- React Router v. 6
+- Postman
+- CSS
+- HTML 5
+- GitHub Project Board
+- Miro board
+- API (see NYT, above)
 
-### `npm run build`
+## Installation Instructions
+1. Clone down this repo by clicking the 'code' button in the top right of this GitHub page and copying the SSH address. Then in your terminal, having setup git, run `git clone [address copied from github here]` and cd into the directory. Run `npm install`, then, `npm start` and open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. To stop running, press `ctrl c`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Planning
+A Miro board was utilized to draw wireframes, brainstorm features, plan out the component list and state, and the site navigation among other things. A GitHub project board was also utilized to create issue 'tickets' that were comprised of user stories and used to monitor progress of the app as each feature was complete.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://user-images.githubusercontent.com/110054994/220989912-a65e95cc-34f4-4683-bfe2-da2ef9e66e63.png" height=300>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Project Goals
+- Time management
+- Project planning
+- Concise MVP and features (decision making)
+- Being able to present and explain choices
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Insights
+- Difficult at firsts to keep scope small and keep work within the 8 hour limit, but forced me to make choices and improved planning and decision making.
+- API offered limited data, affected how the project was built (state, navigation), presented good opportunities for problem solving.
+- Good practice using existing code skill set (React fundamentals, hooks, et cetera).
