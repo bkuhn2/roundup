@@ -21,7 +21,7 @@ const HomePage = ({allArticles, error}) => {
       <Header />
       {error && <h2>{error}</h2>}
       {(!error && !allArticles.length) && <h2>Loading...</h2>}
-      {(!error && allArticles.length) && <>
+      {(!error && !!allArticles.length) && <>
         <FilterForm filter={filter}/>
         <h2>- Curated Articles -</h2>
         {!filteredArticles && <ListDisplay articles={allArticles}/>}
