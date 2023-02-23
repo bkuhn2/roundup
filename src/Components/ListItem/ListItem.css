@@ -11,8 +11,20 @@
   text-decoration: none;
 }
 
+.list-item:hover {
+  transform: scale(1.015);
+  background-color: rgba(83, 213, 213, 0.935);
+  color: rgb(254, 254, 254);
+  text-shadow: 2px 1px 1px #06060673;
+  font-size: 1.65em;
+}
+
 @media screen and (max-width: 700px){
   .list-item {
     font-size: 1em;
+  }
+
+  .list-item:hover {
+    font-size: 1.03em;
   }
 }
